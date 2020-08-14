@@ -27,7 +27,8 @@ path = "src/lib.rs"
 
 [dependencies]
 regex = { version = "1", optional = true }
-memchr = { version = "2.2", default-features = false }
+#memchr = { version = "2.2", default-features = false }
+memchr = { git = "https://github.com/mesalock-linux/rust-memchr-sgx", branch = "master" }
 pin-project-lite = { version = "0.1", optional = true }
 # Future proofing so that tokio-0.3, tokio-0.1 etc can be supported
 tokio-02-dep = { version = "0.2.3", package = "tokio", features = ["io-util"], default-features = false, optional = true }
