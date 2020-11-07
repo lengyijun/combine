@@ -6,3 +6,5 @@
 *.swo
 /.vscode
 /benches/small.mp4
+
+Cargo.lock
